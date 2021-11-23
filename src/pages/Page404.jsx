@@ -1,10 +1,11 @@
 import React from "react";
+import Layout from '../components/Layout';
 
 function Page404() {
     return(
-        <div>
-            EROAREEEEE
-        </div>
+        <Layout>
+            <h1>EROAREEEEE</h1>
+        </Layout>
     );
 }
 

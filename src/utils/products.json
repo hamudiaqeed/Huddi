@@ -1,0 +1,236 @@
+{
+    "coffee": {
+        "items": [
+            {
+                "id": 1,
+                "name": "Cafea boabe - Fruity Blend",
+                "price": 29,
+                "currency": "LEI",
+                "image": "https://cdn.dc5.ro/img-prod/1114145197-2-240.png",
+                "size": 45,
+                "colour": "Negru",
+                "material": "Punga",
+                "brand": "Manufaktura",
+                "description": "Acest blend este alcatuit dintr-un amestec de boabe de origini Ethiopia, Costa Rica si India dozate cu atentie ca sa rezulte intr-un espresso perfect."
+            },
+            {
+                "id": 2,
+                "name": "Cafea boabe - Congo",
+                "price": 29,
+                "currency": "LEI",
+                "image": "https://cdn.dc5.ro/img-prod/1114145061-2-240.png",
+                "size": 45,
+                "colour": "Negru",
+                "material": "Punga",
+                "brand": "Manufaktura",
+                "description": "Acest blend este alcatuit dintr-un amestec de boabe de origini Ethiopia, Costa Rica si India dozate cu atentie ca sa rezulte intr-un espresso perfect."
+            },
+            {
+                "id": 3,
+                "name": "Cafea boabe - India",
+                "price": 29,
+                "currency": "LEI",
+                "image": "https://cdn.dc5.ro/img-prod/1114145141-1-240.png",
+                "size": 45,
+                "colour": "Maro",
+                "material": "Punga",
+                "brand": "Manufaktura",
+                "description": "Acest blend este alcatuit dintr-un amestec de boabe de origini Ethiopia, Costa Rica si India dozate cu atentie ca sa rezulte intr-un espresso perfect."
+            }
+        ],
+        "image": "https://media.istockphoto.com/photos/mug-on-plate-filled-with-coffee-surrounded-by-coffee-beans-picture-id157528129",
+        "name": "Cafea",
+        "description": "Este alegerea ta dacă îi dai gât sau o savurezi, merge oricum!"
+    },
+    "tea": {
+        "items": [
+            {
+                "id": 4,
+                "name": "M492 Apple Cider",
+                "price": 13,
+                "currency": "LEI",
+                "image": "https://cdn.dc5.ro/img-prod/1976976-0-240.jpeg",
+                "size": "L",
+                "colour": "Maro",
+                "material": "Cașmir",
+                "brand": "Casa de ceai",
+                "description": "Infuziile din plante si fructe sunt apreciate in primul rand pentru capacitatea lor de a trata diverse afectiuni fara a avea si efecte secundare."
+            },
+            {
+                "id": 5,
+                "name": "M106 Tiramisu & Truffle",
+                "price": 16,
+                "currency": "LEI",
+                "image": "https://cdn.dc5.ro/img-prod/2000000237718-1920157-240.jpg",
+                "size": "L",
+                "colour": "Multicolor",
+                "material": "Bumbac",
+                "brand": "Casa de ceai",
+                "description": "Roiboosul ,sau ceaiul rosu, cum mai este numit, este o planta ce creste doar intr-o vale din muntii Cedaberg, in Africa de Sud."
+            },
+            {
+                "id": 6,
+                "name": "M34 Autumnal Blend",
+                "price": 13,
+                "currency": "LEI",
+                "image": "https://cdn.dc5.ro/img-prod/2000000140223-1715606-240.jpg",
+                "size": "L",
+                "colour": "Multicolor",
+                "material": "Lână",
+                "brand": "Casa de ceai",
+                "description": "Mult timp s-a crezut ca ceaiul negru si ceaiul verde provin din plante diferite."
+            },
+            {
+                "id": 7,
+                "name": "M412 Mango'n Friends",
+                "price": 20,
+                "currency": "LEI",
+                "image": "https://cdn.dc5.ro/img-prod/439645-0-240.JPG",
+                "size": "L",
+                "colour": "Crem",
+                "material": "Lână",
+                "brand": "Casa de ceai",
+                "description": "Ceai infuzie de fructe M412 Mango'n Friends."
+            }
+        ],
+        "image": "https://media.istockphoto.com/photos/fruit-tea-with-oranges-cinnamon-and-rosemary-picture-id1262729056",
+        "name": "Ceaiuri",
+        "description": "Ce se potrivește mai bine lecturii, dacă nu o ceașcă de ceai fierbinte, drept tovarăș de drum în călătoriile noastre imaginare?"
+    },
+    "boardgames": {
+        "items": [
+            {
+                "id": 8,
+                "name": "Joc - What Do You Meme? Tik Tok Edition",
+                "price": 129,
+                "currency": "LEI",
+                "image": "https://cdn.dc5.ro/img-prod/1116035885-0-240.png",
+                "size": "34",
+                "colour": "Bleumarin închis",
+                "material": "Blug",
+                "brand": "What Do You Meme?",
+                "description": "Vă prezentăm versiunea TikTok a bestsellerului nostru # 1, What Do You Meme? ® Ediția TikTok!"
+            },
+            {
+                "id": 9,
+                "name": "Joc - Holmes - Sherlock Versus Moriarty",
+                "price": 89,
+                "currency": "LEI",
+                "image": "https://cdn.dc5.ro/img-prod/1343316513-0-240.png",
+                "size": "34",
+                "colour": "Negru-gri",
+                "material": "Blug",
+                "brand": "Kosmos",
+                "description": "Un atentat cu bombă a avut loc asupra clădirii Parlamentului britanic. Probele sunt insuficiente iar polițiștii de la Scotland Yard sunt în impas."
+            }
+        ],
+        "image": "https://media.istockphoto.com/photos/family-socializing-during-lockdown-covid-19-picture-id1257609762",
+        "name": "Board Games",
+        "description": "Descoperă gama de Board Games pentru toată familia din magazinul Huddi!"
+    },
+    "figurine": {
+        "items": [
+            {
+                "id": 10,
+                "name": "Figurina - WW80th - Wonder Woman Black Lantern",
+                "price": 80,
+                "currency": "LEI",
+                "image": "https://cdn.dc5.ro/img-prod/1331451302-0-240.jpeg",
+                "size": "L",
+                "colour": "Gri închis",
+                "material": "Vinil",
+                "brand": "FunKo",
+                "description": "Această figurină din vinil are un design original și detalii incredibile. Forma finală și trăsăturile sunt realizate și perfecționate până la cel mai mic detaliu."
+            },
+            {
+                "id": 11,
+                "name": "Figurina - Rick and Morty - Queen Summer",
+                "price": 80,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/eCZd7PU.jpg",
+                "size": "L",
+                "colour": "Bleumarin",
+                "material": "Vinil",
+                "brand": "FunKo",
+                "description": "Această figurină din vinil are un design original și detalii incredibile. Forma finală și trăsăturile sunt realizate și perfecționate până la cel mai mic detaliu."
+            }
+        ],
+        "image": "https://images.unsplash.com/photo-1566577134648-41d15b958d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "name": "Figurine",
+        "description": "Aceste figurine din vinil au un design original și detalii incredibile."
+    },
+    "manga": {
+        "items": [
+            {
+                "id": 12,
+                "name": "Naruto - Volume 38",
+                "price": 52,
+                "currency": "LEI",
+                "image": "https://cdn.dc5.ro/img-prod/244633-1-240.jpeg",
+                "size": "L",
+                "colour": "Multicolor",
+                "material": "Bumbac",
+                "brand": "Masashi Kishimoto",
+                "description": "Naruto finds that his new jutsu is harder to handle than he thought. Meanwhile, Sasuke seems to be falling even more under Orochimaru's spell."
+            },
+            {
+                "id": 13,
+                "name": "One Piece - Volume 7",
+                "price": 52,
+                "currency": "LEI",
+                "image": "https://cdn.dc5.ro/img-prod/454834-0-240.jpg",
+                "size": "L",
+                "colour": "Roșu",
+                "material": "Poliester",
+                "brand": "Eichiro Oda",
+                "description": "Don Krieg's evil pirate armada attempts to hijack the oceangoing restaurant Baratie, but the pirate cooks put up a fierce resistance."
+            },
+            {
+                "id": 14,
+                "name": "Naruto Illustration Book",
+                "price": 83,
+                "currency": "LEI",
+                "image": "https://cdn.dc5.ro/img-prod/9781421538693-2720469-240.jpg",
+                "size": "L",
+                "colour": "Galben-Negru",
+                "material": "Poliester",
+                "brand": "Masashi Kishimoto",
+                "description": "An art book featuring full-color illustrations and comments from Kishimoto from the best-selling Narurto franchise. Also features a pull-out poster and sticker sheet."
+            }
+        ],
+        "image": "https://images.unsplash.com/photo-1627853310624-3c35c6745246?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80g",
+        "name": "Manga",
+        "description": "Sau cum se mai numesc pe la noi, desene japoneze"
+    },
+    "accesories": {
+        "items": [
+            {
+                "id": 15,
+                "name": "Breloc - LEGO Star Wars The Mandalorian The Child",
+                "price": 65,
+                "currency": "LEI",
+                "image": "https://cdn.dc5.ro/img-prod/1110375345-0-240.jpeg",
+                "size": "Universal",
+                "colour": "Gri-Bleumarin",
+                "material": "Star Wars",
+                "brand": "Joy Toy",
+                "description": "Breloc cu lanternă LEGO Star Wars The Mandalorian The Child, înălțime 5 cm."
+            },
+            {
+                "id": 16,
+                "name": "Breloc - Harry Potter - 3D Hedwig",
+                "price": 43,
+                "currency": "LEI",
+                "image": "https://cdn.dc5.ro/img-prod/1009404229-1-240.jpeg",
+                "size": "L",
+                "colour": "Negru",
+                "material": "Piele",
+                "brand": "Cerda",
+                "description": "Acest breloc poate fi atașat cu ușurință de chei și este de asemenea un accesoriu potrivit pentru ghiozdane sau genți."
+            }
+        ],
+        "image": "https://images.unsplash.com/photo-1626241960580-0e2a58245ff4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "name": "Brelocuri",
+        "description": "Putin fun nu strica."
+    }
+}
