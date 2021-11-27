@@ -4,7 +4,7 @@
             {
                 "id": 1,
                 "name": "Cafea boabe - Fruity Blend",
-                "price": 29,
+                "price": 23,
                 "currency": "LEI",
                 "image": "https://cdn.dc5.ro/img-prod/1114145197-2-240.png",
                 "size": 45,
@@ -16,7 +16,7 @@
             {
                 "id": 2,
                 "name": "Cafea boabe - Congo",
-                "price": 29,
+                "price": 19,
                 "currency": "LEI",
                 "image": "https://cdn.dc5.ro/img-prod/1114145061-2-240.png",
                 "size": 45,
@@ -145,9 +145,9 @@
             {
                 "id": 11,
                 "name": "Figurina - Rick and Morty - Queen Summer",
-                "price": 80,
+                "price": 83,
                 "currency": "LEI",
-                "image": "https://i.imgur.com/eCZd7PU.jpg",
+                "image": "https://cdn.dc5.ro/img-prod/1331452254-0.jpeg",
                 "size": "L",
                 "colour": "Bleumarin",
                 "material": "Vinil",
@@ -176,7 +176,7 @@
             {
                 "id": 13,
                 "name": "One Piece - Volume 7",
-                "price": 52,
+                "price": 32,
                 "currency": "LEI",
                 "image": "https://cdn.dc5.ro/img-prod/454834-0-240.jpg",
                 "size": "L",

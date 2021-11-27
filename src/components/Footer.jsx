@@ -2,11 +2,11 @@ import React from "react";
 
 function Footer() {
     return(
-        <footer class="container bg-light text-center text-lg-start">
-            <div class="container p-4">
-                <div class="row">
-                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Footer text</h5>
+        <footer className="bg-light text-center text-lg-start">
+            <div className="container p-4">
+                <div className="row">
+                <div className="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 className="text-uppercase">Footer text</h5>
 
                     <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
@@ -14,8 +14,8 @@ function Footer() {
                     aliquam voluptatem veniam, est atque cumque eum delectus sint!
                     </p>
                 </div>
-                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Footer text</h5>
+                <div className="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 className="text-uppercase">Footer text</h5>
 
                     <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
@@ -25,9 +25,9 @@ function Footer() {
                 </div>
                 </div>
             </div>
-            <div class="text-center p-3">
-                © 2020 Copyright:
-                <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            <div className="text-center p-3">
+                © 2021 Copyright:
+                <a className="text-dark text-decoration-underline" href="https://hamudiaqeed.github.io/Portfolio-Website/"> Mohammed Aqeed</a>
             </div>
             </footer>
     )

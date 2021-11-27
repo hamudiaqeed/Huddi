@@ -1,21 +1,35 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Layout from '../components/Layout';
+import products from '../utils/products.json';
+import ProductList from '../components/ProductList';
 
-class Category extends React.Component {
-    // constructor(){
-    //     super();
-    // }
+class Category extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            category: {},
+            items: []
+        }
+    }
+
+    componentDidMount() {
+        const { match } = this.props;
+        const categoryName = match.params.categoryName;
+        this.setState({
+            category: products[categoryName],
+            items: products[categoryName].items
+        });
+    }
+
     render() {
-
-        const routeParam = this.props.match.params.categoryName
-
-        return(
-            <div>
-                <Layout>
-                    <h1>{routeParam}</h1>
-                </Layout>
-            </div>
-        )
+        return (
+            <Layout>
+                <div className="container">
+                    <h2 className="mb-5 container">{ this.state.category.name }</h2>
+                    <ProductList products={this.state.items} />
+                </div>
+            </Layout>
+        );
     }
 }
 
