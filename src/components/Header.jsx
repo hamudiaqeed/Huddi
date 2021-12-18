@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import logo from '../assets/images/logo.png';
 import './Header.css';
 import { ReactComponent as ShoppingCart } from '../assets/icons/shopping-cart.svg';
+import { connect } from 'react-redux';
 
 function Header(props) {
     const {user, signOut} = props;
@@ -26,11 +27,22 @@ function Header(props) {
                             ? <p className="logout h5" onClick={signOut}>Delogare</p>
                             : <Link to="/login" className="h5">Logare</Link>
                         } */}
-                        <ShoppingCart className="ml-2"/>
+                        <div className="d-flex align-items-center">
+                            <Link to="/cart" className="d-flex">
+                                <ShoppingCart className="ml-2"/>
+                                <p className="ml-1 mb-0">{ props.numberOfProducts }</p>
+                            </Link>
+                        </div>
                     </div>
             </div>
         </header>
     );
 }
 
-export default Header;
+function mapStateToProps(state) {
+    return {
+        numberOfProducts: state.products.length
+    }
+}
+
+export default connect(mapStateToProps, null)(Header);
