@@ -4,9 +4,10 @@ import logo from '../assets/images/logo.png';
 import './Header.css';
 import { ReactComponent as ShoppingCart } from '../assets/icons/shopping-cart.svg';
 import { connect } from 'react-redux';
+import {logoutUser} from '../redux/actions/user';
 
 function Header(props) {
-    const {user, signOut} = props;
+    const {numberOfProducts, user, logout} = props;
 
     return(
         <header className="border-bottom mb-3 ">
@@ -15,25 +16,24 @@ function Header(props) {
                 <Link to="/" className="my-3">
                     <img src={logo} className='header-img' alt=""/>
                 </Link>
+                <div>
+                    { user
+                        ? <p>Salut, {user.displayName}!</p>
+                        : null
+                    }
                     <div className="d-flex justify-content-end">
-                        { user
-                            ? <div>
-                                <p>Salut, {user.displayName}!</p>
-                                <button className="logout h5" onClick={signOut}>Delogare</button>
-                            </div>
-                            : <Link to="/login" className="h5">Logare</Link>
+                        { user && user.uid
+                            ? <p className="logout h5" onClick={() => logout()}>Delogare</p>
+                            : <Link to="/login" className="h5 mb-0">Logare</Link>
                         }
-                        {/* { user
-                            ? <p className="logout h5" onClick={signOut}>Delogare</p>
-                            : <Link to="/login" className="h5">Logare</Link>
-                        } */}
                         <div className="d-flex align-items-center">
                             <Link to="/cart" className="d-flex">
                                 <ShoppingCart className="ml-2"/>
-                                <p className="ml-1 mb-0">{ props.numberOfProducts }</p>
+                                <p className="ml-1 mb-0">{ numberOfProducts }</p>
                             </Link>
                         </div>
                     </div>
+                </div>
             </div>
         </header>
     );
@@ -41,8 +41,15 @@ function Header(props) {
 
 function mapStateToProps(state) {
     return {
-        numberOfProducts: state.products.length
+        numberOfProducts: state.cart.products.length,
+        user: state.user.data
     }
 }
 
-export default connect(mapStateToProps, null)(Header);
+function mapDispatchToProps(dispatch) {
+    return {
+        logout: () => dispatch(logoutUser())
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

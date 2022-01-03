@@ -3,37 +3,57 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo.png';
 import './Login.css';
 
-function Login(props) {
+import {connect} from 'react-redux';
 
-    const {signInWithGoogle, history} = props;
+import {loginUser} from '../redux/actions/user';
 
-    function handleGoogleLogin() {
 
-        const googleLoginRespone = signInWithGoogle();
+class Login extends React.Component {
 
-        googleLoginRespone.then(() => {
-
-            history.push('/');
-        });
+    componentDidUpdate(prevProps) {
+       if(this.props.userData !== prevProps.userData) {
+           this.props.history.push('/');
+       } 
     }
 
-    return(
-        <div className="login-page">
-            <Link to='/'>
-                <img src={logo} alt="logo" className="mb-5"/>
-            </Link>
 
-            <h1 className="h2">Login</h1>
-            <p>Alege providerul cu care vrei să vrei să te loghezi:</p>
+    render() {
 
-            <button
-                className="btn btn-outline-dark d-flex align-items-center"
-                onClick={handleGoogleLogin}
-            >
-                <span className="text-nowrap">Loghează-te cu Google</span>
-            </button>
-        </div>
-    );
+        const {loginUser} = this.props;
+
+        return(
+            <div className="login-page">
+                <Link to='/'>
+                    <img src={logo} alt="logo" className="mb-5"/>
+                </Link>
+    
+                <h1 className="h2">Login</h1>
+                <p>Alege providerul cu care vrei să vrei să te loghezi:</p>
+    
+                <button
+                    className="btn btn-outline-dark d-flex align-items-center"
+                    onClick={loginUser()}
+                >
+                    <span className="text-nowrap">Loghează-te cu Google</span>
+                </button>
+            </div>
+        );
+    }
+    
 }
 
-export default Login;
+function mapStateToProps(state) {
+    return {
+        userData: state.user.data
+    }
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        loginUser: () => {
+            dispatch(loginUser())
+        }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login);

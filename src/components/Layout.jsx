@@ -4,11 +4,9 @@ import Footer from "./Footer";
 
 function Layout(props) {
 
-    const {user, signOut} = props;
-
     return(
         <div>
-            <Header user={user} signOut={signOut}/>
+            <Header/>
                 {props.children}
             <Footer />
         </div>

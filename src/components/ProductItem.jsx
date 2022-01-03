@@ -31,7 +31,7 @@ function ProductItem(props) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        addToCart: (product) => dispatch(addToCart(product))
+        addToCart: (payload) => dispatch(addToCart(payload))
     }
 }
 
